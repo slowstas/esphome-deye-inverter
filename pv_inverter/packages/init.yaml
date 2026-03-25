@@ -23,8 +23,8 @@ esphome:
     name: "lewa-reka.deye-inverter"
     version: "0.12.0"
 
-logger:
-  level: WARN
+#logger:
+#  level: WARN
 
 #api:
 #  encryption:
