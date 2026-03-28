@@ -264,7 +264,7 @@ number:
     icon: "mdi:connection"
     lambda: |-
       uint16_t value = (uint16_t)x
-      int low_byte = value & 0xFF; // Results in 0xCD
+      uint16_t low_byte = value & 0xFF; // Results in 0xCD
       return low_byte;
       
 #    optionsmap:
