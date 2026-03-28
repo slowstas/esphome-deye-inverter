@@ -263,7 +263,7 @@ number:
     entity_category: config
     icon: "mdi:connection"
     lambda: |-
-      int original_value = 0xABCD;
+      uint16_t value = (uint16_t)x
       int low_byte = value & 0xFF; // Results in 0xCD
       return low_byte;
       
