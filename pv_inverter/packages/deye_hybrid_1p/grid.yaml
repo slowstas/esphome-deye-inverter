@@ -172,7 +172,7 @@ sensor:
         return {}; 
       }
       float calculated_value = (((uint32_t)high << 16) | (uint32_t)low) * 0.1;
-      return calculated_value
+      return calculated_value;
    #   unsigned long now = millis();
    #   if (id(last_update_time) > 0 && (now - id(last_update_time) > 3600000)) {
    #     id(last_total_energy_bought) = calculated_value;
