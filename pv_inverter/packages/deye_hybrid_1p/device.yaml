@@ -262,6 +262,11 @@ number:
     value_type: U_WORD
     entity_category: config
     icon: "mdi:connection"
+    lambda: |-
+      int original_value = 0xABCD;
+      int low_byte = value & 0xFF; // Results in 0xCD
+      return low_byte;
+      
 #    optionsmap:
 #      "Disable": 0
 #      "Enable": 1
